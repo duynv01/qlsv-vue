@@ -86,4 +86,7 @@ export default {
     tr, th, td {
         border: 1px solid #000000;
     }
+    button {
+        width: 50%;
+    }
 </style>
