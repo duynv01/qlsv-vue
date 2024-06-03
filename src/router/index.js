@@ -30,14 +30,17 @@ const router = createRouter({
       path: '/class',
       name: 'class',
       
-      component: () => import('../views/ClassView.vue')
+      component: () => import('../views/ClassView.vue'),
+      children: [
+        {
+          path: "add-class",
+          name: 'add.class',
+          
+          component: () => import('../views/Add-ClassView.vue')
+        }
+      ]
     },
-    {
-      path: '/add-class',
-      name: 'add-class',
-      
-      component: () => import('../views/Add-ClassView.vue')
-    }
+    
   ]
 })
 

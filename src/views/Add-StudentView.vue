@@ -5,15 +5,15 @@
     </nav>
     <form action="" @submit.prevent="addStudent">
         <div class="form-input">
-            <label for="">Họ và tên</label>
+            <label for="">Họ và tên: </label>
             <input v-model="newStudent.name" type="text">
         </div>
         <div class="form-input">
-            <label for="">Ngày sinh</label>
+            <label for="">Ngày sinh: </label>
             <input v-model="newStudent.date" type="date">
         </div>
         <div class="form-input">
-            <label for="">Lớp</label>
+            <label for="">Lớp: </label>
             <input v-model="newStudent.class" type="text">
         </div>
         <button type="submit">Thêm</button>
@@ -59,6 +59,19 @@ export default {
 </script>
 <style scoped>
     h3 {
+        font-size: 25px;
         color: rgb(60, 89, 204);
+    }
+    .form-input{
+        font-size: 25px;
+    }
+    input{
+        font-size: 20px;
+    }
+    button {
+        background-color: rgb(113, 158, 230);
+        border:  none;
+        font-size: 20px;
+        margin: 1% 13%;
     }
 </style>

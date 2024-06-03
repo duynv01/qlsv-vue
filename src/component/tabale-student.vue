@@ -79,6 +79,7 @@ export default {
 </script>
 <style scoped>
     div,table {
+        font-size: 20px;
         border-collapse: collapse;
         border: 1px solid #000000;
         width: 100%;
